@@ -44,13 +44,13 @@
                         <div class="btn-group" role="group">
                             <a href="../../public/category_view.html" type="button"
                                class="btn btn-lg btn-outline-primary no-reverse">
-                                <img src="assets/img/icons/eye.svg" alt="eye" class="action-image">
+                                <img src="{{asset('assets/img/icons/eye.svg')}}" alt="eye" class="action-image">
                             </a>
                             <a href="add_category.html" type="button" class="btn btn-lg btn-outline-success no-reverse">
-                                <img src="assets/img/icons/pencil.svg" alt="eye" class="action-image">
+                                <img src="{{asset('assets/img/icons/pencil.svg')}}" alt="eye" class="action-image">
                             </a>
                             <a href="" type="button" class="btn btn-lg btn-outline-danger no-reverse">
-                                <img src="assets/img/icons/trash.svg" alt="eye" class="action-image">
+                                <img src="{{asset('assets/img/icons/trash.svg')}}" alt="eye" class="action-image">
                             </a>
 
 
@@ -66,13 +66,13 @@
                         <div class="btn-group" role="group">
                             <a href="../../public/category_view.html" type="button"
                                class="btn btn-lg btn-outline-primary no-reverse">
-                                <img src="assets/img/icons/eye.svg" alt="eye" class="action-image">
+                                <img src="{{asset('assets/img/icons/eye.svg')}}" alt="eye" class="action-image">
                             </a>
                             <a href="add_category.html" type="button" class="btn btn-lg btn-outline-success no-reverse">
-                                <img src="assets/img/icons/pencil.svg" alt="eye" class="action-image">
+                                <img src="{{asset('assets/img/icons/pencil.svg')}}" alt="eye" class="action-image">
                             </a>
                             <a href="" type="button" class="btn btn-lg btn-outline-danger no-reverse">
-                                <img src="assets/img/icons/trash.svg" alt="eye" class="action-image">
+                                <img src="{{asset('assets/img/icons/trash.svg')}}" alt="eye" class="action-image">
                             </a>
                         </div>
                     </td>
