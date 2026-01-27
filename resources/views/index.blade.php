@@ -11,6 +11,7 @@
                     <th>Description</th>
                     <th>Count</th>
                     <th class="text-end">Actions</th>
+
                 </tr>
                 </thead>
                 <tbody>
