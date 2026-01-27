@@ -51,6 +51,7 @@
                             <a href="" type="button" class="btn btn-lg btn-outline-danger no-reverse">
                                 <img src="assets/img/icons/trash.svg" alt="eye" class="action-image">
                             </a>
+                            
                         </div>
                     </td>
                 </tr>
