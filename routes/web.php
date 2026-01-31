@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -8,3 +9,7 @@ Route::get('/', function () {
 Route::get('/categories/{category}', function () {
     return view('index');
 });
+Route::get('/login',[AuthController::class,'login'])
+    ->name('login');
+Route::post('/loginSend',[AuthController::class,'loginSend'])
+    ->name('login.send');
