@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Panel;
 
+use App\Http\Requests\Panel\CategoryRequest;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class CategoryController
@@ -11,7 +13,11 @@ class CategoryController
      */
     public function index()
     {
-        return view('categories.index');
+
+        return view('categories.index',[
+            'categories' => Category::all(),
+            // 'categories' => Category::query()->get(),
+        ]);
     }
 
     /**
@@ -19,15 +25,18 @@ class CategoryController
      */
     public function create()
     {
-        //
+        return view('categories.create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(CategoryRequest $request)
     {
-        //
+        Category::query()->create($request->validated());
+        return redirect()
+            ->route('admin-panel')
+            ->withInput($request->validated());
     }
 
     /**
