@@ -2,7 +2,6 @@
 
 namespace App\Http\Requests\Panel;
 
-use App\Http\Requests\AuthRequest;
 use Illuminate\Http\RedirectResponse;
 
 class AuthController extends Controller
